@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" role="img" aria-labelledby="title desc">
+<title id="title">Alpine Reflection</title>
+<desc id="desc">Snow-touched mountains reflected in a still lake.</desc>
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0.85" y2="1"><stop stop-color="#b7d9e8"/><stop offset="1" stop-color="#eff1df"/></linearGradient>
+  <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eff1df" stop-opacity=".1"/><stop offset="1" stop-color="#507d91" stop-opacity=".4"/></linearGradient>
+</defs>
+<rect width="1000" height="650" fill="url(#sky)"/>
+<rect width="1000" height="650" fill="url(#glow)"/>
+
+  <circle cx="230" cy="155" r="58" fill="#fff5d7"/>
+  <path d="M0 365 L170 140 L285 285 L430 95 L615 330 L755 175 L1000 375 V650 H0Z" fill="#476d7e"/>
+  <path d="M170 140 L205 208 L240 188 L285 285 L252 265 L225 286 L195 248 L160 255Z" fill="#f7f6e8"/>
+  <path d="M430 95 L483 175 L528 156 L615 330 L560 298 L532 314 L482 249 L455 264 L413 226Z" fill="#f7f6e8"/>
+  <path d="M0 365 Q240 345 500 370 T1000 375 V650 H0Z" fill="#78b1bd"/>
+  <path d="M0 420 L170 465 L285 430 L430 475 L615 425 L755 468 L1000 418 V650 H0Z" fill="#326d81" opacity=".75"/>
+  <path d="M0 515 Q190 495 350 515 T680 512 T1000 518" fill="none" stroke="#c4e2df" stroke-width="6" opacity=".8"/>
+  <path d="M0 580 Q150 565 300 582 T620 580 T1000 572" fill="none" stroke="#c4e2df" stroke-width="4" opacity=".5"/>
+
+<rect x="18" y="18" width="964" height="614" fill="none" stroke="#ffffff" stroke-opacity=".32" stroke-width="2"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" role="img" aria-labelledby="title desc">
+<title id="title">Blue Current</title>
+<desc id="desc">Sunlit water and deep-blue ocean currents.</desc>
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0.85" y2="1"><stop stop-color="#b2e0de"/><stop offset="1" stop-color="#64c4c0"/></linearGradient>
+  <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#64c4c0" stop-opacity=".1"/><stop offset="1" stop-color="#1d7190" stop-opacity=".4"/></linearGradient>
+</defs>
+<rect width="1000" height="650" fill="url(#sky)"/>
+<rect width="1000" height="650" fill="url(#glow)"/>
+
+  <circle cx="725" cy="160" r="70" fill="#f9f1cf" opacity=".96"/>
+  <path d="M0 255 Q150 205 300 260 T600 250 T1000 235 V650 H0Z" fill="#5bc3c0"/>
+  <path d="M0 345 Q180 285 360 350 T700 335 T1000 320 V650 H0Z" fill="#278fa6"/>
+  <path d="M0 440 Q170 375 340 430 T690 420 T1000 405 V650 H0Z" fill="#1d7190"/>
+  <path d="M0 540 Q180 480 360 535 T720 530 T1000 510 V650 H0Z" fill="#174f70"/>
+  <g fill="none" stroke="#d8f4e9" stroke-width="7" stroke-linecap="round" opacity=".8"><path d="M85 335 q60 -30 120 0 t120 0"/><path d="M510 390 q70 -35 140 0 t140 0"/><path d="M205 485 q50 -25 100 0 t100 0"/><path d="M650 565 q60 -25 120 0 t120 0"/></g>
+
+<rect x="18" y="18" width="964" height="614" fill="none" stroke="#ffffff" stroke-opacity=".32" stroke-width="2"/>
+</svg>

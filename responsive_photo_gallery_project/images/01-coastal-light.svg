@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" role="img" aria-labelledby="title desc">
+<title id="title">Coastal Light</title>
+<desc id="desc">Cliffs above a turquoise sea.</desc>
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0.85" y2="1"><stop stop-color="#f6d9aa"/><stop offset="1" stop-color="#f18b61"/></linearGradient>
+  <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f18b61" stop-opacity=".1"/><stop offset="1" stop-color="#1e8d91" stop-opacity=".4"/></linearGradient>
+</defs>
+<rect width="1000" height="650" fill="url(#sky)"/>
+<rect width="1000" height="650" fill="url(#glow)"/>
+
+  <circle cx="700" cy="170" r="65" fill="#fff0c8" opacity=".95"/>
+  <path d="M0 330 Q180 285 350 340 T700 330 T1000 310 V650 H0Z" fill="#40b9b3"/>
+  <path d="M0 420 Q180 380 360 425 T720 420 T1000 400 V650 H0Z" fill="#167e88"/>
+  <path d="M0 245 L155 190 L265 250 L365 170 L485 270 L600 235 L730 315 L845 265 L1000 330 V650 H0Z" fill="#d77f5d"/>
+  <path d="M0 305 L170 245 L265 300 L360 235 L470 320 L610 290 L745 365 L850 320 L1000 380 V650 H0Z" fill="#f4b184"/>
+  <path d="M0 420 Q150 390 300 430 T600 420 T1000 405" fill="none" stroke="#bdebe1" stroke-width="8" opacity=".8"/>
+  <path d="M0 500 Q170 468 350 505 T700 500 T1000 485" fill="none" stroke="#8bd5cc" stroke-width="5" opacity=".7"/>
+  <path d="M0 530 Q100 500 210 530 T440 530 T670 530 T1000 515 V650 H0Z" fill="#0f6671"/>
+
+<rect x="18" y="18" width="964" height="614" fill="none" stroke="#ffffff" stroke-opacity=".32" stroke-width="2"/>
+</svg>

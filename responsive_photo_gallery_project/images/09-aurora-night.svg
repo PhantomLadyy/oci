@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" role="img" aria-labelledby="title desc">
+<title id="title">Aurora Night</title>
+<desc id="desc">Green aurora ribbons over a quiet mountain lake.</desc>
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0.85" y2="1"><stop stop-color="#111b3c"/><stop offset="1" stop-color="#244b66"/></linearGradient>
+  <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#244b66" stop-opacity=".1"/><stop offset="1" stop-color="#65d6ad" stop-opacity=".4"/></linearGradient>
+</defs>
+<rect width="1000" height="650" fill="url(#sky)"/>
+<rect width="1000" height="650" fill="url(#glow)"/>
+
+  <circle cx="770" cy="135" r="44" fill="#f5ecc7" opacity=".95"/>
+  <g fill="#e7f0f4" opacity=".75"><circle cx="120" cy="105" r="3"/><circle cx="265" cy="145" r="2.5"/><circle cx="445" cy="90" r="3"/><circle cx="575" cy="185" r="2"/><circle cx="890" cy="225" r="3"/><circle cx="700" cy="75" r="2"/><circle cx="365" cy="225" r="2"/></g>
+  <path d="M40 60 Q250 230 460 80 T900 85 Q720 225 560 185 T120 260Z" fill="#65d6ad" opacity=".72"/>
+  <path d="M0 145 Q190 300 380 155 T800 175 T1000 130 L1000 250 Q740 345 520 250 T120 320Z" fill="#2f9f9a" opacity=".65"/>
+  <path d="M0 390 L150 270 L300 360 L470 240 L650 390 L825 285 L1000 385 V650 H0Z" fill="#192e4d"/>
+  <path d="M0 440 Q180 400 350 445 T720 440 T1000 430 V650 H0Z" fill="#1a6076"/>
+  <path d="M0 505 Q210 475 420 510 T800 505 T1000 495 V650 H0Z" fill="#123c57"/>
+  <path d="M0 560 Q200 535 400 560 T800 562 T1000 550" fill="none" stroke="#69cfbe" stroke-width="4" opacity=".7"/>
+
+<rect x="18" y="18" width="964" height="614" fill="none" stroke="#ffffff" stroke-opacity=".32" stroke-width="2"/>
+</svg>

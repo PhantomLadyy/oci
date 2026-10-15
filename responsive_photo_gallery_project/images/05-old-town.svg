@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" role="img" aria-labelledby="title desc">
+<title id="title">Old Town Geometry</title>
+<desc id="desc">Sunlit pastel buildings along a narrow street.</desc>
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0.85" y2="1"><stop stop-color="#93bcc5"/><stop offset="1" stop-color="#f1d7aa"/></linearGradient>
+  <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f1d7aa" stop-opacity=".1"/><stop offset="1" stop-color="#d38b72" stop-opacity=".4"/></linearGradient>
+</defs>
+<rect width="1000" height="650" fill="url(#sky)"/>
+<rect width="1000" height="650" fill="url(#glow)"/>
+
+  <path d="M0 0 H340 L520 650 H0Z" fill="#d48b72"/>
+  <path d="M1000 0 H700 L525 650 H1000Z" fill="#eec69a"/>
+  <path d="M340 0 H700 L570 650 H440Z" fill="#f8e5c4"/>
+  <path d="M0 0 H1000 V95 Q730 110 500 95 Q250 85 0 120Z" fill="#6f9796" opacity=".75"/>
+  <g fill="#537d82"><rect x="70" y="115" width="90" height="170" rx="42"/><rect x="205" y="165" width="72" height="130" rx="35"/><rect x="755" y="120" width="90" height="178" rx="44"/><rect x="875" y="180" width="70" height="120" rx="34"/></g>
+  <path d="M350 650 L460 385 Q500 330 540 385 L650 650Z" fill="#a77c63"/>
+  <path d="M0 500 L1000 500 M0 560 L1000 560 M0 615 L1000 615" stroke="#a76f57" stroke-width="4" opacity=".38"/>
+
+<rect x="18" y="18" width="964" height="614" fill="none" stroke="#ffffff" stroke-opacity=".32" stroke-width="2"/>
+</svg>

@@ -1,0 +1,397 @@
+/*
+  FIELD NOTES — Responsive Photo Gallery
+  Mobile-first CSS. The two width-based media queries are ordered from
+  smaller to larger; preference queries follow the layout queries.
+*/
+:root {
+  color-scheme: light dark;
+  --page-bg: #f6f4ed;
+  --ink: #222923;
+  --muted: #4f5b54;
+  --accent: #155a50;
+  --accent-ink: #ffffff;
+  --card-bg: #fffefa;
+  --card-ink: #242a25;
+  --card-border: #d4d8ce;
+  --line: #c8cec4;
+  --soft: #e8e6dc;
+  --detail: #526057;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}
+
+.site-header,
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 1rem;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+}
+
+.wordmark {
+  color: var(--ink);
+  font-size: 1.02rem;
+  font-weight: 850;
+  letter-spacing: .08em;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.wordmark span:first-child {
+  font-weight: 450;
+}
+
+.wordmark .wordmark-dot {
+  color: var(--accent);
+}
+
+.edition,
+.site-footer p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .66rem;
+  font-weight: 750;
+  letter-spacing: .13em;
+}
+
+.edition span,
+.site-footer p span {
+  padding-inline: .35rem;
+  color: var(--accent);
+}
+
+main {
+  padding: 0 1rem;
+}
+
+.intro {
+  padding: 3.4rem 0 2rem;
+}
+
+.eyebrow {
+  margin: 0 0 1.1rem;
+  color: var(--accent);
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(3.4rem, 15vw, 6.8rem);
+  font-weight: 780;
+  letter-spacing: -.075em;
+  line-height: .88;
+}
+
+h1 em {
+  color: var(--accent);
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -.07em;
+}
+
+.intro-copy {
+  width: min(100%, 39rem);
+  margin: 1.5rem 0 1.3rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.intro-rule {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  margin-top: 1.7rem;
+}
+
+.intro-rule span {
+  display: block;
+  width: 2.1rem;
+  height: 3px;
+  background: var(--accent);
+}
+
+.intro-rule span:nth-child(2) {
+  width: 1rem;
+  opacity: .5;
+}
+
+.intro-rule span:nth-child(3) {
+  width: .45rem;
+  opacity: .25;
+}
+
+.gallery-section {
+  padding: .8rem 0 3.2rem;
+}
+
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .25rem;
+  margin-bottom: 1rem;
+  padding-bottom: .8rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 760;
+  letter-spacing: -.025em;
+}
+
+.section-heading p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .64rem;
+  font-weight: 750;
+  letter-spacing: .12em;
+}
+
+/* Mobile-first: one column, with a 10px row and column gap. */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+}
+
+.gallery-item {
+  min-width: 0;
+  margin: 0;
+  padding: .7rem;
+  border: 2px solid var(--card-border);
+  background: var(--card-bg);
+  color: var(--card-ink);
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.gallery-item:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 5 / 3;
+  object-fit: cover;
+  border-radius: 0;
+  background: var(--soft);
+}
+
+.gallery-item figcaption {
+  padding: .9rem .25rem .35rem;
+}
+
+.item-number {
+  display: block;
+  margin-bottom: .3rem;
+  color: var(--detail);
+  font-size: .61rem;
+  font-weight: 800;
+  letter-spacing: .15em;
+}
+
+.gallery-item h2 {
+  margin: 0 0 .3rem;
+  font-size: 1.1rem;
+  font-weight: 760;
+  letter-spacing: -.025em;
+  line-height: 1.25;
+}
+
+.gallery-item p {
+  margin: 0;
+  color: var(--detail);
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
+.site-footer {
+  align-items: flex-start;
+  border-top: 1px solid var(--line);
+}
+
+.site-footer p {
+  width: min(100%, 18rem);
+  line-height: 1.8;
+}
+
+.back-to-top {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: .6rem;
+  padding: .55rem .8rem;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: .8rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.back-to-top span {
+  font-size: 1rem;
+}
+
+/* Tablet view: two columns, circular images, final figure fills the row. */
+@media screen and (min-width: 772px) {
+  .site-header,
+  .site-footer {
+    padding-inline: 2rem;
+  }
+
+  main {
+    padding-inline: 2rem;
+  }
+
+  .intro {
+    padding-top: 4.7rem;
+    padding-bottom: 3rem;
+  }
+
+  .intro-copy {
+    font-size: 1.05rem;
+  }
+
+  .section-heading {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gallery-item img {
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+  }
+
+  .gallery-item:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .gallery-item:last-child img {
+    aspect-ratio: 2 / 1;
+  }
+}
+
+/* Large screens: inherited two-column grid; every third figure spans both columns. */
+@media screen and (min-width: 992px) {
+  .site-header,
+  .site-footer {
+    padding-inline: 3rem;
+  }
+
+  main {
+    padding-inline: 3rem;
+  }
+
+  .intro {
+    padding-top: 5.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .intro-copy {
+    width: min(100%, 43rem);
+  }
+
+  .gallery-item img,
+  .gallery-item:last-child img {
+    aspect-ratio: 5 / 3;
+    border-radius: 0;
+  }
+
+  .gallery-item:nth-child(3n) {
+    grid-column: span 2;
+  }
+}
+
+/* Respect the operating-system preference: no smooth or animated motion. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .gallery-item:hover {
+    transform: none;
+  }
+}
+
+/* Dark color preference: dark figures, pale-yellow text, black borders. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-bg: #111613;
+    --ink: #f2f4ec;
+    --muted: #d0d7cd;
+    --accent: #bdebd8;
+    --accent-ink: #111613;
+    --card-bg: #1b211d;
+    --card-ink: #fff0ad;
+    --card-border: #000000;
+    --line: #465149;
+    --soft: #2c352f;
+    --detail: #f1e7b9;
+  }
+
+  .gallery-item {
+    background-color: #1b211d;
+    color: #fff0ad;
+    border-color: #000000;
+  }
+
+  .gallery-item p,
+  .item-number {
+    color: #f1e7b9;
+  }
+
+  .back-to-top {
+    background: #bdebd8;
+    border-color: #000000;
+    color: #111613;
+  }
+}
